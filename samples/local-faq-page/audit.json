@@ -1,0 +1,319 @@
+{
+  "tool": "site_audit.py",
+  "version": "0.1",
+  "audited_at": "2026-10-02T04:16:06+00:00",
+  "mode": "offline",
+  "url": "https://rapid-rooter.test/",
+  "final_url": "https://rapid-rooter.test/",
+  "fetch": null,
+  "site_files": null,
+  "score": {
+    "overall": 85,
+    "grade": "B",
+    "sections": {
+      "seo": {
+        "name": "SEO basics",
+        "score": 73,
+        "grade": "C",
+        "checked": 8,
+        "total": 9
+      },
+      "technical": {
+        "name": "Technical",
+        "score": 100,
+        "grade": "A",
+        "checked": 2,
+        "total": 5
+      },
+      "local": {
+        "name": "Local SEO",
+        "score": 79,
+        "grade": "C",
+        "checked": 3,
+        "total": 3
+      },
+      "aeo": {
+        "name": "AEO (AI search readiness)",
+        "score": 100,
+        "grade": "A",
+        "checked": 5,
+        "total": 6
+      }
+    }
+  },
+  "counts": {
+    "pass": 12,
+    "warn": 6,
+    "fail": 0,
+    "not_checked": 5
+  },
+  "top_fixes": [
+    "seo_title",
+    "local_phone",
+    "seo_word_count",
+    "seo_canonical",
+    "seo_img_alt"
+  ],
+  "checks": [
+    {
+      "id": "seo_https",
+      "section": "seo",
+      "label": "Secure connection (HTTPS)",
+      "status": "not_checked",
+      "weight": 3,
+      "detail": "Not checked (offline): the page was read from a local file, so the live site was not contacted.",
+      "fix": "Run the audit against the live URL to check this."
+    },
+    {
+      "id": "seo_title",
+      "section": "seo",
+      "label": "Page title shown in Google results",
+      "status": "warn",
+      "weight": 3,
+      "detail": "Title is 97 characters (aim for 30 to 60): \"Rapid Rooter Plumbing | 24/7 Emergency Plumber, Drain Cleaning and Water Heaters in Rou...\".",
+      "fix": "Shorten the title to 60 characters or less so Google does not cut it off."
+    },
+    {
+      "id": "seo_meta_description",
+      "section": "seo",
+      "label": "Description snippet shown under the title in Google",
+      "status": "pass",
+      "weight": 2,
+      "detail": "Description is 130 characters.",
+      "fix": "No action needed."
+    },
+    {
+      "id": "seo_h1",
+      "section": "seo",
+      "label": "One clear main heading on the page",
+      "status": "pass",
+      "weight": 2,
+      "detail": "One H1: \"Emergency Plumber in Round Rock, TX\".",
+      "fix": "No action needed."
+    },
+    {
+      "id": "seo_canonical",
+      "section": "seo",
+      "label": "Preferred address of the page (canonical tag)",
+      "status": "warn",
+      "weight": 1,
+      "detail": "No canonical tag found.",
+      "fix": "Add a <link rel=\"canonical\"> tag that points to the preferred address of this page."
+    },
+    {
+      "id": "seo_robots_meta",
+      "section": "seo",
+      "label": "Page allows search engines to list it",
+      "status": "pass",
+      "weight": 3,
+      "detail": "No noindex directive found.",
+      "fix": "No action needed."
+    },
+    {
+      "id": "seo_img_alt",
+      "section": "seo",
+      "label": "Images have text descriptions (alt text)",
+      "status": "warn",
+      "weight": 1,
+      "detail": "3 of 4 images have alt text (75%).",
+      "fix": "Add a short alt description to each meaningful image, for example 'Technician repairing a water heater'."
+    },
+    {
+      "id": "seo_word_count",
+      "section": "seo",
+      "label": "Enough written content on the page",
+      "status": "warn",
+      "weight": 2,
+      "detail": "About 255 words of visible text (aim for 300 or more).",
+      "fix": "Expand the page to at least 300 words covering what you do, for whom, where, prices and common questions."
+    },
+    {
+      "id": "seo_open_graph",
+      "section": "seo",
+      "label": "Preview title and image when shared on social media",
+      "status": "warn",
+      "weight": 1,
+      "detail": "Only og:title found; the other Open Graph tag is missing.",
+      "fix": "Add og:title and og:image tags so links shared on Facebook, LinkedIn or WhatsApp show a proper preview."
+    },
+    {
+      "id": "tech_robots",
+      "section": "technical",
+      "label": "Instructions file for search engine robots (robots.txt)",
+      "status": "not_checked",
+      "weight": 1,
+      "detail": "Not checked (offline): the page was read from a local file, so the live site was not contacted.",
+      "fix": "Run the audit against the live URL to check this."
+    },
+    {
+      "id": "tech_sitemap",
+      "section": "technical",
+      "label": "List of pages for search engines (sitemap.xml)",
+      "status": "not_checked",
+      "weight": 2,
+      "detail": "Not checked (offline): the page was read from a local file, so the live site was not contacted.",
+      "fix": "Run the audit against the live URL to check this."
+    },
+    {
+      "id": "tech_viewport",
+      "section": "technical",
+      "label": "Page is set up for mobile phones",
+      "status": "pass",
+      "weight": 3,
+      "detail": "Viewport tag found: 'width=device-width, initial-scale=1'. (Basic signal only, not a full mobile test.)",
+      "fix": "No action needed."
+    },
+    {
+      "id": "tech_html_size",
+      "section": "technical",
+      "label": "Page code is a reasonable size",
+      "status": "pass",
+      "weight": 1,
+      "detail": "The HTML itself is 4 KB (images, scripts and styles loaded separately are not counted).",
+      "fix": "No action needed."
+    },
+    {
+      "id": "tech_response_time",
+      "section": "technical",
+      "label": "Server answers quickly",
+      "status": "not_checked",
+      "weight": 2,
+      "detail": "Not checked (offline): the page was read from a local file, so the live site was not contacted.",
+      "fix": "Run the audit against the live URL to check this."
+    },
+    {
+      "id": "local_phone",
+      "section": "local",
+      "label": "Phone number customers can tap to call",
+      "status": "warn",
+      "weight": 3,
+      "detail": "Phone number found in the page text ((512) 555-0182), but not as a tap-to-call link.",
+      "fix": "Wrap the phone number in a tap-to-call link (<a href=\"tel:+15125550100\">) near the top of the page."
+    },
+    {
+      "id": "local_address",
+      "section": "local",
+      "label": "Business address search engines can read",
+      "status": "pass",
+      "weight": 3,
+      "detail": "Address found in Plumber structured data: 220 Sample Road, Round Rock, TX, 78664.",
+      "fix": "No action needed."
+    },
+    {
+      "id": "local_maps",
+      "section": "local",
+      "label": "Link or map to find you on Google Maps",
+      "status": "pass",
+      "weight": 1,
+      "detail": "Google Maps embed found (https://www.google.com/maps/embed?pb=!1m18!demo-placeholder).",
+      "fix": "No action needed."
+    },
+    {
+      "id": "aeo_jsonld",
+      "section": "aeo",
+      "label": "Structured data for search engines and AI (JSON-LD)",
+      "status": "pass",
+      "weight": 2,
+      "detail": "2 JSON-LD block(s) found and parsed.",
+      "fix": "No action needed."
+    },
+    {
+      "id": "aeo_schema_types",
+      "section": "aeo",
+      "label": "Types of structured data found",
+      "status": "pass",
+      "weight": 1,
+      "detail": "Found: Plumber, PostalAddress, FAQPage, Question, Answer.",
+      "fix": "No action needed."
+    },
+    {
+      "id": "aeo_faq",
+      "section": "aeo",
+      "label": "FAQ marked up so AI tools can quote answers",
+      "status": "pass",
+      "weight": 2,
+      "detail": "FAQPage/QAPage schema found with 3 question(s).",
+      "fix": "No action needed."
+    },
+    {
+      "id": "aeo_question_headings",
+      "section": "aeo",
+      "label": "Headings phrased as customer questions",
+      "status": "pass",
+      "weight": 2,
+      "detail": "3 H2/H3 heading(s) end with '?': \"How much does drain cleaning cost in Round Rock?\"; \"Do you charge extra for nights and weekends?\"; \"Should I repair or replace my water heater?\".",
+      "fix": "No action needed."
+    },
+    {
+      "id": "aeo_entity",
+      "section": "aeo",
+      "label": "Business identity for AI tools (name and social profiles)",
+      "status": "pass",
+      "weight": 3,
+      "detail": "Plumber schema for \"Rapid Rooter Plumbing\" with 2 sameAs profile link(s).",
+      "fix": "No action needed."
+    },
+    {
+      "id": "aeo_llms_txt",
+      "section": "aeo",
+      "label": "Guide file for AI assistants (llms.txt)",
+      "status": "not_checked",
+      "weight": 1,
+      "detail": "Not checked (offline): the page was read from a local file, so the live site was not contacted.",
+      "fix": "Run the audit against the live URL to check this."
+    }
+  ],
+  "facts": {
+    "base_url": "https://rapid-rooter.test/",
+    "html_bytes": 4065,
+    "title": "Rapid Rooter Plumbing | 24/7 Emergency Plumber, Drain Cleaning and Water Heaters in Round Rock TX",
+    "meta_description": "Licensed Round Rock plumber for leaks, clogged drains and water heater repair. Same-day service, upfront prices, 24/7 emergencies.",
+    "h1": [
+      "Emergency Plumber in Round Rock, TX"
+    ],
+    "canonical": null,
+    "robots_meta": [],
+    "x_robots_tag": null,
+    "viewport": "width=device-width, initial-scale=1",
+    "og_title": "Rapid Rooter Plumbing, Round Rock TX",
+    "og_image": null,
+    "img_total": 4,
+    "img_no_alt": 1,
+    "img_decorative": 0,
+    "word_count": 255,
+    "tel_links": [],
+    "text_phones": [
+      "(512) 555-0182"
+    ],
+    "street_matches": [
+      "220 Sample Road"
+    ],
+    "address_tags": [],
+    "maps_hits": [
+      [
+        "embed",
+        "https://www.google.com/maps/embed?pb=!1m18!demo-placeholder"
+      ]
+    ],
+    "jsonld_ok": 2,
+    "jsonld_bad": 0,
+    "jsonld_types": [
+      "Plumber",
+      "PostalAddress",
+      "FAQPage",
+      "Question",
+      "Answer"
+    ],
+    "microdata_types": [],
+    "faq_nodes": 1,
+    "faq_questions": 3,
+    "question_headings": [
+      "How much does drain cleaning cost in Round Rock?",
+      "Do you charge extra for nights and weekends?",
+      "Should I repair or replace my water heater?"
+    ],
+    "org_names": [
+      "Rapid Rooter Plumbing"
+    ]
+  }
+}

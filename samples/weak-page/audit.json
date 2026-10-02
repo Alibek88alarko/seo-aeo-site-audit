@@ -1,0 +1,303 @@
+{
+  "tool": "site_audit.py",
+  "version": "0.1",
+  "audited_at": "2026-10-02T04:16:06+00:00",
+  "mode": "offline",
+  "url": "https://joes-roofing.test/",
+  "final_url": "https://joes-roofing.test/",
+  "fetch": null,
+  "site_files": null,
+  "score": {
+    "overall": 17,
+    "grade": "F",
+    "sections": {
+      "seo": {
+        "name": "SEO basics",
+        "score": 20,
+        "grade": "F",
+        "checked": 8,
+        "total": 9
+      },
+      "technical": {
+        "name": "Technical",
+        "score": 25,
+        "grade": "F",
+        "checked": 2,
+        "total": 5
+      },
+      "local": {
+        "name": "Local SEO",
+        "score": 29,
+        "grade": "F",
+        "checked": 3,
+        "total": 3
+      },
+      "aeo": {
+        "name": "AEO (AI search readiness)",
+        "score": 0,
+        "grade": "F",
+        "checked": 5,
+        "total": 6
+      }
+    }
+  },
+  "counts": {
+    "pass": 1,
+    "warn": 5,
+    "fail": 12,
+    "not_checked": 5
+  },
+  "top_fixes": [
+    "seo_robots_meta",
+    "tech_viewport",
+    "local_address",
+    "aeo_entity",
+    "seo_meta_description"
+  ],
+  "checks": [
+    {
+      "id": "seo_https",
+      "section": "seo",
+      "label": "Secure connection (HTTPS)",
+      "status": "not_checked",
+      "weight": 3,
+      "detail": "Not checked (offline): the page was read from a local file, so the live site was not contacted.",
+      "fix": "Run the audit against the live URL to check this."
+    },
+    {
+      "id": "seo_title",
+      "section": "seo",
+      "label": "Page title shown in Google results",
+      "status": "warn",
+      "weight": 3,
+      "detail": "Title is 4 characters (aim for 30 to 60): \"Home\".",
+      "fix": "Lengthen the title to 30 to 60 characters: business name, main service, city."
+    },
+    {
+      "id": "seo_meta_description",
+      "section": "seo",
+      "label": "Description snippet shown under the title in Google",
+      "status": "fail",
+      "weight": 2,
+      "detail": "No meta description found.",
+      "fix": "Write a 70 to 160 character description that says what you offer, where, and why to choose you."
+    },
+    {
+      "id": "seo_h1",
+      "section": "seo",
+      "label": "One clear main heading on the page",
+      "status": "warn",
+      "weight": 2,
+      "detail": "2 H1 headings found: \"Welcome to Joe's Roofing\"; \"Quality You Can Trust\".",
+      "fix": "Keep one H1 for the main topic and turn the others into H2 subheadings."
+    },
+    {
+      "id": "seo_canonical",
+      "section": "seo",
+      "label": "Preferred address of the page (canonical tag)",
+      "status": "warn",
+      "weight": 1,
+      "detail": "No canonical tag found.",
+      "fix": "Add a <link rel=\"canonical\"> tag that points to the preferred address of this page."
+    },
+    {
+      "id": "seo_robots_meta",
+      "section": "seo",
+      "label": "Page allows search engines to list it",
+      "status": "fail",
+      "weight": 3,
+      "detail": "The page tells search engines not to list it (meta robots: 'noindex, nofollow').",
+      "fix": "Remove 'noindex' (often left over from a staging site) unless this page should stay hidden."
+    },
+    {
+      "id": "seo_img_alt",
+      "section": "seo",
+      "label": "Images have text descriptions (alt text)",
+      "status": "fail",
+      "weight": 1,
+      "detail": "1 of 3 images have alt text (33%).",
+      "fix": "Add a short alt description to each meaningful image, for example 'Technician repairing a water heater'."
+    },
+    {
+      "id": "seo_word_count",
+      "section": "seo",
+      "label": "Enough written content on the page",
+      "status": "fail",
+      "weight": 2,
+      "detail": "About 55 words of visible text (aim for 300 or more).",
+      "fix": "Expand the page to at least 300 words covering what you do, for whom, where, prices and common questions."
+    },
+    {
+      "id": "seo_open_graph",
+      "section": "seo",
+      "label": "Preview title and image when shared on social media",
+      "status": "fail",
+      "weight": 1,
+      "detail": "No og:title or og:image tags found.",
+      "fix": "Add og:title and og:image tags so links shared on Facebook, LinkedIn or WhatsApp show a proper preview."
+    },
+    {
+      "id": "tech_robots",
+      "section": "technical",
+      "label": "Instructions file for search engine robots (robots.txt)",
+      "status": "not_checked",
+      "weight": 1,
+      "detail": "Not checked (offline): the page was read from a local file, so the live site was not contacted.",
+      "fix": "Run the audit against the live URL to check this."
+    },
+    {
+      "id": "tech_sitemap",
+      "section": "technical",
+      "label": "List of pages for search engines (sitemap.xml)",
+      "status": "not_checked",
+      "weight": 2,
+      "detail": "Not checked (offline): the page was read from a local file, so the live site was not contacted.",
+      "fix": "Run the audit against the live URL to check this."
+    },
+    {
+      "id": "tech_viewport",
+      "section": "technical",
+      "label": "Page is set up for mobile phones",
+      "status": "fail",
+      "weight": 3,
+      "detail": "No viewport tag, so phones may show a shrunken desktop page. (This is the basic signal only, not a full mobile test.)",
+      "fix": "Add <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"> to the page head."
+    },
+    {
+      "id": "tech_html_size",
+      "section": "technical",
+      "label": "Page code is a reasonable size",
+      "status": "pass",
+      "weight": 1,
+      "detail": "The HTML itself is 1 KB (images, scripts and styles loaded separately are not counted).",
+      "fix": "No action needed."
+    },
+    {
+      "id": "tech_response_time",
+      "section": "technical",
+      "label": "Server answers quickly",
+      "status": "not_checked",
+      "weight": 2,
+      "detail": "Not checked (offline): the page was read from a local file, so the live site was not contacted.",
+      "fix": "Run the audit against the live URL to check this."
+    },
+    {
+      "id": "local_phone",
+      "section": "local",
+      "label": "Phone number customers can tap to call",
+      "status": "warn",
+      "weight": 3,
+      "detail": "Phone number found in the page text (512-555-0199), but not as a tap-to-call link.",
+      "fix": "Wrap the phone number in a tap-to-call link (<a href=\"tel:+15125550100\">) near the top of the page."
+    },
+    {
+      "id": "local_address",
+      "section": "local",
+      "label": "Business address search engines can read",
+      "status": "fail",
+      "weight": 3,
+      "detail": "No business address found in the page text or structured data.",
+      "fix": "Show your address or service area on the page and add it to LocalBusiness schema."
+    },
+    {
+      "id": "local_maps",
+      "section": "local",
+      "label": "Link or map to find you on Google Maps",
+      "status": "warn",
+      "weight": 1,
+      "detail": "No Google Maps embed or link found. This is a bonus item, so it only counts as 'needs work'.",
+      "fix": "Embed your Google Maps location or link to your Google Business Profile."
+    },
+    {
+      "id": "aeo_jsonld",
+      "section": "aeo",
+      "label": "Structured data for search engines and AI (JSON-LD)",
+      "status": "fail",
+      "weight": 2,
+      "detail": "No JSON-LD structured data found.",
+      "fix": "Add JSON-LD structured data (Organization or LocalBusiness at minimum) so search engines and AI tools can read your key facts reliably."
+    },
+    {
+      "id": "aeo_schema_types",
+      "section": "aeo",
+      "label": "Types of structured data found",
+      "status": "fail",
+      "weight": 1,
+      "detail": "No schema.org types found (checked JSON-LD and microdata).",
+      "fix": "Describe the business with schema.org types such as LocalBusiness, Service and FAQPage."
+    },
+    {
+      "id": "aeo_faq",
+      "section": "aeo",
+      "label": "FAQ marked up so AI tools can quote answers",
+      "status": "fail",
+      "weight": 2,
+      "detail": "No FAQPage or QAPage schema found. Google shows FAQ rich results only for a small set of sites since 2023, but a marked-up question and answer block is still a clean, structured source for answer engines.",
+      "fix": "Add an FAQ section with 3 to 8 real customer questions and mark it up with FAQPage schema."
+    },
+    {
+      "id": "aeo_question_headings",
+      "section": "aeo",
+      "label": "Headings phrased as customer questions",
+      "status": "fail",
+      "weight": 2,
+      "detail": "No H2/H3 headings end with a question mark.",
+      "fix": "Rewrite some subheadings as the questions customers ask, for example 'How much does a drain cleaning cost?', and answer each one right below."
+    },
+    {
+      "id": "aeo_entity",
+      "section": "aeo",
+      "label": "Business identity for AI tools (name and social profiles)",
+      "status": "fail",
+      "weight": 3,
+      "detail": "No Organization or LocalBusiness schema found in JSON-LD.",
+      "fix": "Add Organization or LocalBusiness schema with your exact business name and sameAs links to your Google Business Profile, Facebook, LinkedIn and Yelp pages."
+    },
+    {
+      "id": "aeo_llms_txt",
+      "section": "aeo",
+      "label": "Guide file for AI assistants (llms.txt)",
+      "status": "not_checked",
+      "weight": 1,
+      "detail": "Not checked (offline): the page was read from a local file, so the live site was not contacted.",
+      "fix": "Run the audit against the live URL to check this."
+    }
+  ],
+  "facts": {
+    "base_url": "https://joes-roofing.test/",
+    "html_bytes": 674,
+    "title": "Home",
+    "meta_description": null,
+    "h1": [
+      "Welcome to Joe's Roofing",
+      "Quality You Can Trust"
+    ],
+    "canonical": null,
+    "robots_meta": [
+      "noindex, nofollow"
+    ],
+    "x_robots_tag": null,
+    "viewport": null,
+    "og_title": null,
+    "og_image": null,
+    "img_total": 3,
+    "img_no_alt": 2,
+    "img_decorative": 0,
+    "word_count": 55,
+    "tel_links": [],
+    "text_phones": [
+      "512-555-0199"
+    ],
+    "street_matches": [],
+    "address_tags": [],
+    "maps_hits": [],
+    "jsonld_ok": 0,
+    "jsonld_bad": 0,
+    "jsonld_types": [],
+    "microdata_types": [],
+    "faq_nodes": 0,
+    "faq_questions": 0,
+    "question_headings": [],
+    "org_names": []
+  }
+}

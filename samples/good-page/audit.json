@@ -1,0 +1,319 @@
+{
+  "tool": "site_audit.py",
+  "version": "0.1",
+  "audited_at": "2026-10-02T04:16:06+00:00",
+  "mode": "offline",
+  "url": "https://northwind-books.test/",
+  "final_url": "https://northwind-books.test/",
+  "fetch": null,
+  "site_files": null,
+  "score": {
+    "overall": 99,
+    "grade": "A",
+    "sections": {
+      "seo": {
+        "name": "SEO basics",
+        "score": 100,
+        "grade": "A",
+        "checked": 8,
+        "total": 9
+      },
+      "technical": {
+        "name": "Technical",
+        "score": 100,
+        "grade": "A",
+        "checked": 2,
+        "total": 5
+      },
+      "local": {
+        "name": "Local SEO",
+        "score": 93,
+        "grade": "A",
+        "checked": 3,
+        "total": 3
+      },
+      "aeo": {
+        "name": "AEO (AI search readiness)",
+        "score": 100,
+        "grade": "A",
+        "checked": 5,
+        "total": 6
+      }
+    }
+  },
+  "counts": {
+    "pass": 17,
+    "warn": 1,
+    "fail": 0,
+    "not_checked": 5
+  },
+  "top_fixes": [
+    "local_maps"
+  ],
+  "checks": [
+    {
+      "id": "seo_https",
+      "section": "seo",
+      "label": "Secure connection (HTTPS)",
+      "status": "not_checked",
+      "weight": 3,
+      "detail": "Not checked (offline): the page was read from a local file, so the live site was not contacted.",
+      "fix": "Run the audit against the live URL to check this."
+    },
+    {
+      "id": "seo_title",
+      "section": "seo",
+      "label": "Page title shown in Google results",
+      "status": "pass",
+      "weight": 3,
+      "detail": "Title is 58 characters: \"Northwind Bookkeeping | Small Business Bookkeeping, Austin\".",
+      "fix": "No action needed."
+    },
+    {
+      "id": "seo_meta_description",
+      "section": "seo",
+      "label": "Description snippet shown under the title in Google",
+      "status": "pass",
+      "weight": 2,
+      "detail": "Description is 130 characters.",
+      "fix": "No action needed."
+    },
+    {
+      "id": "seo_h1",
+      "section": "seo",
+      "label": "One clear main heading on the page",
+      "status": "pass",
+      "weight": 2,
+      "detail": "One H1: \"Small Business Bookkeeping in Austin\".",
+      "fix": "No action needed."
+    },
+    {
+      "id": "seo_canonical",
+      "section": "seo",
+      "label": "Preferred address of the page (canonical tag)",
+      "status": "pass",
+      "weight": 1,
+      "detail": "Canonical tag points to https://northwind-books.test/.",
+      "fix": "No action needed."
+    },
+    {
+      "id": "seo_robots_meta",
+      "section": "seo",
+      "label": "Page allows search engines to list it",
+      "status": "pass",
+      "weight": 3,
+      "detail": "No noindex directive found. Robots directive: 'index, follow'.",
+      "fix": "No action needed."
+    },
+    {
+      "id": "seo_img_alt",
+      "section": "seo",
+      "label": "Images have text descriptions (alt text)",
+      "status": "pass",
+      "weight": 1,
+      "detail": "3 of 3 images have alt text (100%). 1 more marked decorative (empty alt), which is fine.",
+      "fix": "No action needed."
+    },
+    {
+      "id": "seo_word_count",
+      "section": "seo",
+      "label": "Enough written content on the page",
+      "status": "pass",
+      "weight": 2,
+      "detail": "About 313 words of visible text (aim for 300 or more).",
+      "fix": "No action needed."
+    },
+    {
+      "id": "seo_open_graph",
+      "section": "seo",
+      "label": "Preview title and image when shared on social media",
+      "status": "pass",
+      "weight": 1,
+      "detail": "og:title and og:image both found.",
+      "fix": "No action needed."
+    },
+    {
+      "id": "tech_robots",
+      "section": "technical",
+      "label": "Instructions file for search engine robots (robots.txt)",
+      "status": "not_checked",
+      "weight": 1,
+      "detail": "Not checked (offline): the page was read from a local file, so the live site was not contacted.",
+      "fix": "Run the audit against the live URL to check this."
+    },
+    {
+      "id": "tech_sitemap",
+      "section": "technical",
+      "label": "List of pages for search engines (sitemap.xml)",
+      "status": "not_checked",
+      "weight": 2,
+      "detail": "Not checked (offline): the page was read from a local file, so the live site was not contacted.",
+      "fix": "Run the audit against the live URL to check this."
+    },
+    {
+      "id": "tech_viewport",
+      "section": "technical",
+      "label": "Page is set up for mobile phones",
+      "status": "pass",
+      "weight": 3,
+      "detail": "Viewport tag found: 'width=device-width, initial-scale=1'. (Basic signal only, not a full mobile test.)",
+      "fix": "No action needed."
+    },
+    {
+      "id": "tech_html_size",
+      "section": "technical",
+      "label": "Page code is a reasonable size",
+      "status": "pass",
+      "weight": 1,
+      "detail": "The HTML itself is 5 KB (images, scripts and styles loaded separately are not counted).",
+      "fix": "No action needed."
+    },
+    {
+      "id": "tech_response_time",
+      "section": "technical",
+      "label": "Server answers quickly",
+      "status": "not_checked",
+      "weight": 2,
+      "detail": "Not checked (offline): the page was read from a local file, so the live site was not contacted.",
+      "fix": "Run the audit against the live URL to check this."
+    },
+    {
+      "id": "local_phone",
+      "section": "local",
+      "label": "Phone number customers can tap to call",
+      "status": "pass",
+      "weight": 3,
+      "detail": "Tap-to-call link found: +15125550147.",
+      "fix": "No action needed."
+    },
+    {
+      "id": "local_address",
+      "section": "local",
+      "label": "Business address search engines can read",
+      "status": "pass",
+      "weight": 3,
+      "detail": "Address found in AccountingService structured data: 4100 Example Avenue, Suite 210, Austin, TX, 78701.",
+      "fix": "No action needed."
+    },
+    {
+      "id": "local_maps",
+      "section": "local",
+      "label": "Link or map to find you on Google Maps",
+      "status": "warn",
+      "weight": 1,
+      "detail": "No Google Maps embed or link found. This is a bonus item, so it only counts as 'needs work'.",
+      "fix": "Embed your Google Maps location or link to your Google Business Profile."
+    },
+    {
+      "id": "aeo_jsonld",
+      "section": "aeo",
+      "label": "Structured data for search engines and AI (JSON-LD)",
+      "status": "pass",
+      "weight": 2,
+      "detail": "1 JSON-LD block(s) found and parsed.",
+      "fix": "No action needed."
+    },
+    {
+      "id": "aeo_schema_types",
+      "section": "aeo",
+      "label": "Types of structured data found",
+      "status": "pass",
+      "weight": 1,
+      "detail": "Found: AccountingService, PostalAddress, WebSite, FAQPage, Question, Answer.",
+      "fix": "No action needed."
+    },
+    {
+      "id": "aeo_faq",
+      "section": "aeo",
+      "label": "FAQ marked up so AI tools can quote answers",
+      "status": "pass",
+      "weight": 2,
+      "detail": "FAQPage/QAPage schema found with 3 question(s).",
+      "fix": "No action needed."
+    },
+    {
+      "id": "aeo_question_headings",
+      "section": "aeo",
+      "label": "Headings phrased as customer questions",
+      "status": "pass",
+      "weight": 2,
+      "detail": "4 H2/H3 heading(s) end with '?': \"What is included every month?\"; \"How much does monthly bookkeeping cost?\"; \"Do you work with QuickBooks and Xero?\".",
+      "fix": "No action needed."
+    },
+    {
+      "id": "aeo_entity",
+      "section": "aeo",
+      "label": "Business identity for AI tools (name and social profiles)",
+      "status": "pass",
+      "weight": 3,
+      "detail": "AccountingService schema for \"Northwind Bookkeeping\" with 2 sameAs profile link(s).",
+      "fix": "No action needed."
+    },
+    {
+      "id": "aeo_llms_txt",
+      "section": "aeo",
+      "label": "Guide file for AI assistants (llms.txt)",
+      "status": "not_checked",
+      "weight": 1,
+      "detail": "Not checked (offline): the page was read from a local file, so the live site was not contacted.",
+      "fix": "Run the audit against the live URL to check this."
+    }
+  ],
+  "facts": {
+    "base_url": "https://northwind-books.test/",
+    "html_bytes": 4791,
+    "title": "Northwind Bookkeeping | Small Business Bookkeeping, Austin",
+    "meta_description": "Monthly bookkeeping, payroll and tax-ready books for Austin small businesses. Flat monthly pricing, QuickBooks and Xero certified.",
+    "h1": [
+      "Small Business Bookkeeping in Austin"
+    ],
+    "canonical": "https://northwind-books.test/",
+    "robots_meta": [
+      "index, follow"
+    ],
+    "x_robots_tag": null,
+    "viewport": "width=device-width, initial-scale=1",
+    "og_title": "Northwind Bookkeeping: small business bookkeeping in Austin",
+    "og_image": "https://northwind-books.test/img/og-cover.jpg",
+    "img_total": 4,
+    "img_no_alt": 0,
+    "img_decorative": 1,
+    "word_count": 313,
+    "tel_links": [
+      "+15125550147",
+      "+15125550147"
+    ],
+    "text_phones": [
+      "(512) 555-0147"
+    ],
+    "street_matches": [
+      "4100 Example Avenue"
+    ],
+    "address_tags": [
+      "Northwind Bookkeeping, 4100 Example Avenue, Suite 210, Austin, TX 78701"
+    ],
+    "maps_hits": [],
+    "jsonld_ok": 1,
+    "jsonld_bad": 0,
+    "jsonld_types": [
+      "AccountingService",
+      "PostalAddress",
+      "WebSite",
+      "FAQPage",
+      "Question",
+      "Answer"
+    ],
+    "microdata_types": [],
+    "faq_nodes": 1,
+    "faq_questions": 3,
+    "question_headings": [
+      "What is included every month?",
+      "How much does monthly bookkeeping cost?",
+      "Do you work with QuickBooks and Xero?",
+      "Can you clean up books that are months behind?"
+    ],
+    "org_names": [
+      "Northwind Bookkeeping"
+    ]
+  }
+}
